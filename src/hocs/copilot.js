@@ -160,7 +160,7 @@ const copilot = ({
       }
 
       async moveToCurrentStep(): void {
-        const size = await this.state.currentStep.target.measure();
+        const size = await this.state.currentStep.measure();
 
         await this.modal.animateMove({
           width: size.width + OFFSET_WIDTH,
